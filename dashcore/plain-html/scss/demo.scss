@@ -1,0 +1,11 @@
+// For compatibility and sharing of styles with another themes of ours
+@import "shared/import";
+
+// Importing of any local variable|function|mixins that should be globally accessed
+@import "dashcore/import";
+
+/* Demo styling,
+ * this file will bring Demo Landing Page styles,
+ * you can safely remove if you're not using any style the index.html
+ */
+@import "dashcore/demo";

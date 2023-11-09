@@ -1,0 +1,48 @@
+.app-landing-2-header {
+  .background-shape-main {
+    @include media-breakpoint-up(xl) {
+      transform: translate(-30%, -10%) skewY(-30deg);
+    }
+  }
+
+  .animation {
+    &-shape {
+      &.shape {
+        &-triangle {
+          left: auto;
+          right: 0;
+        }
+
+        &-cross {
+          left: 25%;
+        }
+      }
+    }
+  }
+
+  .static {
+    &-shape {
+      &.pattern {
+        &-dots {
+          &-1 {
+            left: auto;
+            right: 0;
+          }
+
+          &-2 {
+            right: auto;
+            left: 33%;
+          }
+        }
+      }
+    }
+  }
+
+  .shape {
+    &[data-aos] {
+      &:before {
+        transform: rotate(55deg);
+      }
+    }
+  }
+}

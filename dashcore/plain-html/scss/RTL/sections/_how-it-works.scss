@@ -1,0 +1,12 @@
+.how-it-works {
+  .shape {
+    &-ring {
+      right: auto;
+      left: 0;
+
+      div {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+  }
+}

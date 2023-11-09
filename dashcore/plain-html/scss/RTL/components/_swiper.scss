@@ -1,0 +1,15 @@
+.swiper-center-nav {
+  .swiper-button {
+    &-prev {
+      left: auto;
+      right: 0;
+      transform: translate(50%);
+    }
+
+    &-next {
+      left: 0;
+      right: auto;
+      transform: translate(-50%);
+    }
+  }
+}

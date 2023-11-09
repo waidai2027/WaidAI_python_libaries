@@ -1,0 +1,42 @@
+.smart-business-header {
+  .shape-top {
+    transform: rotate(30deg) translate3D(-75%, -45%, 0);
+  }
+
+  .background-shape {
+    @include media-breakpoint-up(xl) {
+      transform: translate(-30%, -12%) skewY(-30deg);
+    }
+  }
+
+  .main-shape-wrapper {
+    @include media-breakpoint-up(lg) {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  .anim {
+    &.anim-1 {
+      top: 56%;
+      right: auto;
+      left: 5%;
+    }
+
+    &.anim-2 {
+      top: 10%;
+      right: auto;
+      left: 58%;
+    }
+
+    &.anim-3 {
+      top: 33%;
+      right: auto;
+      left: 22%;
+    }
+  }
+
+  .main-shape {
+    transform: scale(-1, 1);
+  }
+}

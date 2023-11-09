@@ -1,0 +1,54 @@
+.app-safety {
+  .shape {
+    position: absolute;
+
+    &-triangle {
+      left: 25%;
+      top: 0;
+      transform: translate(100%, -15%) rotate(65deg);
+
+      div {
+        @include triangle-variant(250px, $color-primary, $color-primary);
+      }
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        left: 5%;
+      }
+    }
+
+    &-circle {
+      right: 5%;
+      top: 65%;
+
+      div {
+        @include circle-variant(100px, $safe-circle-bg-color);
+      }
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        right: 15%;
+        top: 5%;
+      }
+    }
+
+    &-ring {
+      left: 0;
+      top: 25%;
+      transform: translate3d(10%, -35%, 0);
+
+      div {
+        opacity: 0.15;
+        @include ring-variant(330px, 75px, $safe-ring-bg-color);
+      }
+    }
+
+    &.pattern {
+      &-dots {
+        bottom: 0;
+        left: 25%;
+        width: 200px;
+        height: 50%;
+        @include pattern-dots(3px, 30px, $safe-dots-bg-color);
+      }
+    }
+  }
+}

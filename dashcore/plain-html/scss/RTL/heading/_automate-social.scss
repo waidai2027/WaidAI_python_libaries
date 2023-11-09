@@ -1,0 +1,25 @@
+.automate-social-header {
+  .shape-main {
+    transform-origin: 100% 100%;
+    transform: translate(-20%, 0) rotate(30deg);
+  }
+
+  .shape-background {
+    &.shape-right {
+      right: 93%;
+      left: auto;
+      transform: rotate(45deg);
+    }
+  }
+
+  .main-shape-wrapper {
+    @include media-breakpoint-up(lg) {
+      right: auto;
+      left: 0;
+    }
+
+    figure {
+      transform: scale(-1, 1);
+    }
+  }
+}

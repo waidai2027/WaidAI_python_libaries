@@ -1,0 +1,19 @@
+.btn-group {
+  > .btn:not(:last-child):not(.dropdown-toggle),
+  > .btn-group:not(:last-child) > .btn {
+    @include border-start-radius(0);
+  }
+
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) > .btn {
+    @include border-end-radius(0);
+  }
+
+  > .btn:first-child {
+    @include border-end-radius($btn-border-radius);
+  }
+
+  > .btn:last-child {
+    @include border-start-radius($btn-border-radius);
+  }
+}

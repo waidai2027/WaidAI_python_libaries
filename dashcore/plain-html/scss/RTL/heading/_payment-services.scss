@@ -1,0 +1,21 @@
+.payment-services-header {
+  .shape-main {
+    left: auto;
+    right: 0;
+  }
+
+  .figure-box {
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      margin-left: 0;
+      margin-right: auto;
+      transform: translate3d(-25%, 0, 0);
+    }
+  }
+
+  .promo-box {
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      left: auto;
+      right: -100px;
+    }
+  }
+}

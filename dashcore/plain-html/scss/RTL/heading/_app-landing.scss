@@ -1,0 +1,21 @@
+.app-landing-header {
+  .shape-main {
+    @include media-breakpoint-up($grid-float-breakpoint) {
+      transform: translate(50%, 0) rotate(-30deg);
+    }
+  }
+
+  .shape-top {
+    transform-origin: unset;
+    transform: translateY(-60%) rotate(60deg);
+    left: auto;
+    right: 45%;
+  }
+
+  .screen-highlight {
+    left: 50%;
+  }
+
+  .gradient.gradient-primary-dark {
+  }
+}

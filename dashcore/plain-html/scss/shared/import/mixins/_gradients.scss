@@ -1,0 +1,7 @@
+@mixin make-gradient($color-start, $color-end) {
+  @if $rtl {
+    background-image: linear-gradient(to left top, $color-start, $color-end);
+  } @else {
+    background-image: linear-gradient(to right top, $color-start, $color-end);
+  }
+}

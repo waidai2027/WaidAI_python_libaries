@@ -1,0 +1,12 @@
+.built-tech {
+  .shape {
+    &-circle {
+      left: auto;
+      right: 0;
+
+      div {
+        transform: translate(50%, -10%);
+      }
+    }
+  }
+}

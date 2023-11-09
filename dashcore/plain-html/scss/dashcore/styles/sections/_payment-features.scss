@@ -1,0 +1,7 @@
+.payment-features {
+  .shape {
+    &-circle {
+      @include circle-variant(80px, $color-primary);
+    }
+  }
+}

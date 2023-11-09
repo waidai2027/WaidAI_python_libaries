@@ -1,0 +1,13 @@
+.checkbox,
+.radio {
+  label {
+    &:before {
+      margin: 0 0 0 0.5em;
+    }
+
+    &:after {
+      left: 0;
+      right: 4.75px;
+    }
+  }
+}

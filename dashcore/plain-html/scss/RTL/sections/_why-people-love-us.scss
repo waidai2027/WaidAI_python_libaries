@@ -1,0 +1,32 @@
+.why-people-love-us {
+  .shape {
+    &-circle {
+      &-1 {
+        left: auto;
+        right: 7%;
+
+        @include media-breakpoint-up($grid-float-breakpoint) {
+          right: 25%;
+        }
+      }
+
+      &-2 {
+        right: 60%;
+        left: auto;
+
+        @include media-breakpoint-up($grid-float-breakpoint) {
+          right: 22%;
+        }
+      }
+    }
+
+    &.pattern {
+      &-dots {
+        &-1 {
+          right: 20%;
+          left: auto;
+        }
+      }
+    }
+  }
+}

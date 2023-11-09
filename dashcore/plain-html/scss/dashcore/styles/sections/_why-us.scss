@@ -1,0 +1,40 @@
+.why-us {
+  .shape-wrapper {
+    overflow: visible;
+  }
+
+  .shape-background {
+    background-color: $why-us-shape-background-bg-color;
+    max-width: 70%;
+
+    &.right {
+      transform: rotate(45deg) translate(50%, -50%);
+    }
+
+    &.left {
+      transform: rotate(45deg) translate(-50%, 50%);
+    }
+  }
+}
+
+// TODO: create a generic component for this
+.why-icon-list {
+  &:before {
+    content: "";
+    width: 1px;
+    border: 1px dashed $why-us-icon-list-border-color;
+    position: absolute;
+    bottom: 80px;
+    top: 50px;
+    left: 50px;
+    z-index: -1;
+  }
+
+  .list-item {
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

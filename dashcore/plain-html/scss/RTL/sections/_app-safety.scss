@@ -1,0 +1,24 @@
+.app-safety {
+  .shape {
+    &-triangle {
+      left: auto;
+      right: 25%;
+
+      @include media-breakpoint-up($grid-float-breakpoint) {
+        right: 5%;
+      }
+    }
+
+    &-circle {
+      left: 5%;
+      right: auto;
+    }
+
+    &.pattern {
+      &-dots {
+        right: 25%;
+        left: auto;
+      }
+    }
+  }
+}

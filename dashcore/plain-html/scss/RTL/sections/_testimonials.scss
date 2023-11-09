@@ -1,0 +1,40 @@
+.singl-testimonial {
+  .user-review {
+    @include media-breakpoint-up(lg) {
+      transform: translate(25%, 25%);
+    }
+
+    blockquote {
+      &:before {
+        transform: translate(70%, 0);
+      }
+    }
+
+    .svg-review-bottom {
+      transform: translateX(55%);
+
+      &.back {
+        transform: translate(51%, -1%) scale(1.1);
+      }
+
+      &.left {
+        transform: rotate(-45deg) translate(146%, -143%) scale(1.7);
+      }
+    }
+  }
+
+  .reviews-navigation {
+    right: auto;
+    left: 0;
+
+    .reviews-nav-prev {
+      margin-right: 0;
+      margin-left: 2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      right: auto;
+      left: 13%;
+    }
+  }
+}

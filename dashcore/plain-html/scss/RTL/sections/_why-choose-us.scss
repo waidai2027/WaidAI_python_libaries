@@ -1,0 +1,17 @@
+.why-choose-us {
+  .browser {
+    transform: translate(-40%, -10%) rotate3d(0.342, -0.94, 0, 22deg)
+      rotateZ(-7deg);
+  }
+
+  .iphone-x {
+    transform: translate(20%, 10%) rotate3d(0.5, 0.866, 0, 16deg) rotateZ(7deg);
+  }
+
+  .pattern {
+    &-dots {
+      left: auto;
+      right: 60%;
+    }
+  }
+}

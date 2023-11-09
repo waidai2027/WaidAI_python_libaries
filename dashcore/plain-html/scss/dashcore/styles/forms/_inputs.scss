@@ -1,0 +1,31 @@
+.input-group-register {
+  position: relative;
+
+  label {
+    position: absolute;
+    bottom: -4px;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    border-radius: $border-radius;
+    margin: 0;
+    height: 60px;
+    right: 5px;
+    border: none;
+    color: $white;
+    transition: all 0.4s;
+    z-index: 4;
+    @include center(y);
+  }
+
+  .form-control {
+    width: 100%;
+    position: relative;
+    border-radius: $border-radius;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 180px 0 30px;
+    border: none;
+  }
+}
